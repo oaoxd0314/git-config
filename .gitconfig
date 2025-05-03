@@ -1,0 +1,16 @@
+[user]
+	name = chris wang
+	email = chris.w@gmitec.net
+[core]
+	ignoreCase = false
+[alias]
+	aliases = config --get-regexp ^alias\\.
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	all-aliases = "!f() { echo \"= Git Config Aliases =\"; git config --get-regexp \"^alias\\\\.\"; echo \"\\n= Oh My Zsh Git Aliases =\"; alias | grep \"^g\" | grep -v \"grep\"; }; f"
+	refresh = !git fetch origin --prune && git fetch upstream --prune && echo \"✓ All remotes updated (origin, upstream)\"
+	sync = !git checkout main && git fetch upstream && git merge upstream/main && git push origin main
