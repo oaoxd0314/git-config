@@ -1,6 +1,6 @@
 [user]
-	name = chris wang
-	email = chris.w@gmitec.net
+	name = Chris Wang
+	email = oaoxd0314@gmail.com
 [core]
 	ignoreCase = false
 [alias]
@@ -9,6 +9,9 @@
 	co = checkout
 	br = branch
 	ci = commit
+	cm = commit -m
+	cam = commit -am
+	cane = commit --amend --no-edit
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	all-aliases = "!f() { echo \"= Git Config Aliases =\"; git config --get-regexp \"^alias\\\\.\"; echo \"\\n= Oh My Zsh Git Aliases =\"; alias | grep \"^g\" | grep -v \"grep\"; }; f"
